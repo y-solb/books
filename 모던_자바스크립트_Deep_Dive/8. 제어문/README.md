@@ -4,7 +4,7 @@
 
 ### 8.3.2 while문
 
-- for문은 반복 횟수가 명확할 때 주로 사용하고 while문은 반복 횟수가 불명확할 때 주로 사용한다.
+for문은 반복 횟수가 명확할 때 주로 사용하고 while문은 반복 횟수가 불명확할 때 주로 사용한다.
 
 ```js
 var count = 0;
@@ -26,6 +26,23 @@ do (true) {
 console.log(count); // 0 1 2
 count++;
 } while (count < 3)
+```
+
+## 8.4 break문
+
+레이블 문, 반복문 또는 switch 문의 코드 블록을 탈출한다.
+
+```js
+var string = "Hello World.";
+var search = "l";
+var index;
+
+for (var i = 0; i < string.length; i++) {
+  if (string[i] === search) {
+    index = i;
+    break; // 반복문 탈출
+  }
+}
 ```
 
 ## 8.5 continue문
